@@ -13,7 +13,8 @@ export default function Home() {
             alt="Hero Background"
             fill
             priority
-            className="object-fill" // Explicitly requested to show full width and height without cropping
+            sizes="50vw"
+            className="object-cover"
           />
         </div>
 
@@ -37,29 +38,30 @@ export default function Home() {
       <section className="relative flex min-h-screen w-full flex-col md:flex-row overflow-hidden bg-white">
         {/* Left Image Section with Angled Clip */}
         {/* On Desktop: Image is on the Left, Text on the Right */}
-        <div
-          className="absolute top-0 left-0 h-full w-[50%] bg-gray-200 hidden md:block"
-          style={{
-            clipPath: 'polygon(0 0, 100% 0, 80% 100%, 0 100%)', // Wide at top, narrower at bottom (slants /)
-            background: 'linear-gradient(to right, #c2410c, #9a3412)', // Placeholder using warm orange/brown tone from design
-          }}
-        >
-          {/* Placeholder for Image */}
-          <div className="w-full h-full relative flex items-center justify-center">
-            <div className="text-white/20 font-bold text-4xl">
-              IMAGE PLACEHOLDER
-            </div>
-          </div>
+        <div className="absolute top-0 left-0 h-full w-[50%] z-0 hidden md:block">
+          <Image
+            src="https://qb1.vc/static/media/bg-home-2.4ed26e4a8364aac26929.jpg"
+            alt="Innovation Background"
+            fill
+            sizes="50vw"
+            className="object-cover object-left"
+          />
         </div>
 
         {/* Mobile Image Fallback */}
-        <div className="h-64 w-full bg-orange-800 md:hidden flex items-center justify-center text-white/50">
-          IMAGE PLACEHOLDER
+        <div className="relative h-64 w-full md:hidden">
+          <Image
+            src="https://qb1.vc/static/media/bg-home-2.4ed26e4a8364aac26929.jpg"
+            alt="Innovation Background"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
         </div>
 
         {/* Right Content Section */}
         {/* We use ml-auto to push it to the right, and give it appropriate padding */}
-        <div className="z-10 flex w-full flex-col justify-center bg-transparent px-8 md:w-[60%] md:ml-auto md:px-24">
+        <div className="z-10 flex w-full flex-col justify-center bg-transparent px-8 md:w-1/2 md:ml-auto md:pl-32 md:pr-12">
           <div className="max-w-xl py-12 md:py-0">
             <h2 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-4xl lg:text-4xl mb-6">
               Qubicle One Ventures: Igniting the Spark of Global Innovation and Exceptional Design
@@ -74,7 +76,7 @@ export default function Home() {
       {/* SECTION 3: Innovation at Our Core */}
       <section className="relative flex min-h-screen w-full flex-col md:flex-row overflow-hidden bg-white">
         {/* Left Content Section */}
-        <div className="z-10 flex w-full flex-col justify-center bg-white px-8 md:w-[60%] md:px-24">
+        <div className="z-10 flex w-full flex-col justify-center bg-white px-8 md:w-1/2 md:px-24 md:pr-32">
           <div className="max-w-xl py-12 md:py-0">
             <h2 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-4xl lg:text-4xl mb-6">
               Innovation at Our Core
@@ -89,32 +91,25 @@ export default function Home() {
         </div>
 
         {/* Right Image Section with Angled Clip */}
-        <div
-          className="absolute top-0 right-0 h-full w-[50%] bg-gray-200 hidden md:block"
-          style={{
-            clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0% 100%)', // Matches Hero angle
-            background: 'linear-gradient(to right, #000000, #111111)', // Dark code-like placeholder
-          }}
-        >
-          {/* Placeholder for Image */}
-          <div className="w-full h-full relative flex items-center justify-center overflow-hidden">
-            {/* Decorative "Code" Background effect */}
-            <div className="absolute inset-0 opacity-20 p-4 text-xs font-mono text-green-500 overflow-hidden leading-tight break-all">
-              {`const innovation = true; while(innovation) { buildFuture(); } function buildFuture() { return "Qubicle One"; } ...`}
-              {`const innovation = true; while(innovation) { buildFuture(); } function buildFuture() { return "Qubicle One"; } ...`}
-              {`const innovation = true; while(innovation) { buildFuture(); } function buildFuture() { return "Qubicle One"; } ...`}
-              {`const innovation = true; while(innovation) { buildFuture(); } function buildFuture() { return "Qubicle One"; } ...`}
-              {`const innovation = true; while(innovation) { buildFuture(); } function buildFuture() { return "Qubicle One"; } ...`}
-            </div>
-            <div className="text-white/20 font-bold text-4xl relative z-10">
-              IMAGE PLACEHOLDER
-            </div>
-          </div>
+        <div className="absolute top-0 right-0 h-full w-[50%] z-0 hidden md:block">
+          <Image
+            src="https://qb1.vc/static/media/bg-home-3.f19e57920cfa879a9f85.jpg"
+            alt="Core Innovation"
+            fill
+            sizes="50vw"
+            className="object-cover"
+          />
         </div>
 
         {/* Mobile Image Fallback */}
-        <div className="h-64 w-full bg-black md:hidden flex items-center justify-center text-white/50">
-          IMAGE PLACEHOLDER
+        <div className="relative h-64 w-full md:hidden">
+          <Image
+            src="https://qb1.vc/static/media/bg-home-3.f19e57920cfa879a9f85.jpg"
+            alt="Core Innovation"
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
         </div>
       </section>
     </main>

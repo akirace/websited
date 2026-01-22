@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         protocol: 'http',
         hostname: 'qb1.vc',
       },
+      {
+        protocol: 'https',
+        hostname: 'qb1.vc',
+      },
     ],
   },
 };
