@@ -277,69 +277,95 @@ export default function Service() {
                 </div>
             </section>
 
-            {/* SECTION 5: Our Partners */}
-            <section className="w-full px-8 md:px-16 pt-8 pb-20 bg-white">
-                <div className="w-full">
-                    <h2 className="text-3xl font-bold text-center text-black mb-12">Partners</h2>
-
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {/* Bank Mandiri */}
-                        <div className="flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-lg">
-                            <div className="relative w-full h-24 mb-4">
-                                <Image
-                                    src="https://strapi.ackerlabs.my.id/uploads/partner_mandiri_01f338132b7fdca83c06_f4d113ecfc.jpg"
-                                    alt="Bank Mandiri"
-                                    fill
-                                    sizes="(max-width: 768px) 50vw, 25vw"
-                                    className="object-contain"
-                                />
-                            </div>
-                            <p className="text-sm font-medium text-gray-800 text-center">Bank Mandiri</p>
-                        </div>
-
-                        {/* Asian Technology Solutions */}
-                        <div className="flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-lg">
-                            <div className="relative w-full h-24 mb-4">
-                                <Image
-                                    src="https://strapi.ackerlabs.my.id/uploads/ats_b66c02c5e6.jpg"
-                                    alt="Asian Technology Solutions"
-                                    fill
-                                    sizes="(max-width: 768px) 50vw, 25vw"
-                                    className="object-contain"
-                                />
-                            </div>
-                            <p className="text-sm font-medium text-gray-800 text-center">Asian Technology Solutions</p>
-                        </div>
-
-                        {/* PT Sifang */}
-                        <div className="flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-lg">
-                            <div className="relative w-full h-24 mb-4">
-                                <Image
-                                    src="https://strapi.ackerlabs.my.id/uploads/sifang_7204400dd5.jpg"
-                                    alt="PT Sifang"
-                                    fill
-                                    sizes="(max-width: 768px) 50vw, 25vw"
-                                    className="object-contain"
-                                />
-                            </div>
-                            <p className="text-sm font-medium text-gray-800 text-center">PT Sifang</p>
-                        </div>
-
-                        {/* Indocyber */}
-                        <div className="flex flex-col items-center justify-center p-6 bg-white border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-lg">
-                            <div className="relative w-full h-24 mb-4">
-                                <Image
-                                    src="https://strapi.ackerlabs.my.id/uploads/indocyber_2cd96ab486.png"
-                                    alt="Indocyber"
-                                    fill
-                                    sizes="(max-width: 768px) 50vw, 25vw"
-                                    className="object-contain"
-                                />
-                            </div>
-                            <p className="text-sm font-medium text-gray-800 text-center">Indocyber</p>
-                        </div>
+            {/* SECTION 5: Our Partners - Infinite Scroll */}
+            <section className="w-full py-20 bg-gradient-to-r from-[#1a4d8c]/5 via-white to-[#00a8b5]/5 overflow-hidden">
+                <div className="max-w-7xl mx-auto px-8 md:px-16 mb-12">
+                    <div className="text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Our Partners</h2>
+                        <p className="text-gray-600 max-w-2xl mx-auto">
+                            We collaborate with leading organizations to deliver exceptional talent solutions
+                        </p>
                     </div>
                 </div>
+
+                {/* Infinite Scroll Container */}
+                <div className="relative w-full">
+                    {/* Gradient Overlays for smooth edges */}
+                    <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
+                    <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+
+                    {/* Scrolling Track */}
+                    <div className="flex animate-scroll hover:pause-animation">
+                        {/* First Set */}
+                        {[
+                            { src: "https://strapi.ackerlabs.my.id/uploads/partner_mandiri_01f338132b7fdca83c06_f4d113ecfc.jpg", name: "Bank Mandiri" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/ats_b66c02c5e6.jpg", name: "Asian Technology Solutions" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/sifang_7204400dd5.jpg", name: "PT Sifang" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/indocyber_2cd96ab486.png", name: "Indocyber" },
+                        ].map((partner, index) => (
+                            <div
+                                key={`first-${index}`}
+                                className="flex-shrink-0 mx-6 group"
+                            >
+                                <div className="w-64 h-40 bg-white rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center justify-center p-6 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-105 group-hover:border-[#1a4d8c]/20">
+                                    <div className="relative w-full h-20 mb-3">
+                                        <Image
+                                            src={partner.src}
+                                            alt={partner.name}
+                                            fill
+                                            sizes="200px"
+                                            className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                                        />
+                                    </div>
+                                    <p className="text-sm font-semibold text-gray-700 text-center group-hover:text-[#1a4d8c] transition-colors">{partner.name}</p>
+                                </div>
+                            </div>
+                        ))}
+                        {/* Duplicate Set for Seamless Loop */}
+                        {[
+                            { src: "https://strapi.ackerlabs.my.id/uploads/partner_mandiri_01f338132b7fdca83c06_f4d113ecfc.jpg", name: "Bank Mandiri" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/ats_b66c02c5e6.jpg", name: "Asian Technology Solutions" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/sifang_7204400dd5.jpg", name: "PT Sifang" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/indocyber_2cd96ab486.png", name: "Indocyber" },
+                        ].map((partner, index) => (
+                            <div
+                                key={`second-${index}`}
+                                className="flex-shrink-0 mx-6 group"
+                            >
+                                <div className="w-64 h-40 bg-white rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center justify-center p-6 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-105 group-hover:border-[#1a4d8c]/20">
+                                    <div className="relative w-full h-20 mb-3">
+                                        <Image
+                                            src={partner.src}
+                                            alt={partner.name}
+                                            fill
+                                            sizes="200px"
+                                            className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                                        />
+                                    </div>
+                                    <p className="text-sm font-semibold text-gray-700 text-center group-hover:text-[#1a4d8c] transition-colors">{partner.name}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* CSS Animation */}
+                <style jsx>{`
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-50%);
+                        }
+                    }
+                    .animate-scroll {
+                        animation: scroll 20s linear infinite;
+                    }
+                    .animate-scroll:hover {
+                        animation-play-state: paused;
+                    }
+                `}</style>
             </section>
         </main>
     );
