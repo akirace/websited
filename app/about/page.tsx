@@ -43,20 +43,20 @@ export default function About() {
                         {/* For Clients */}
                         <div className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300">
                             <h3 className="text-2xl font-bold text-black mb-6 flex items-center gap-3">
-                                <Users className="w-8 h-8 text-blue-600" />
+                                <Users className="w-8 h-8 text-[#1a4d8c]" />
                                 For Clients
                             </h3>
                             <ul className="space-y-4">
                                 <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-[#1a4d8c] mt-1 flex-shrink-0" />
                                     <p className="text-gray-700">Access to a database of over <strong>10,000+ curated CVs</strong>.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-[#1a4d8c] mt-1 flex-shrink-0" />
                                     <p className="text-gray-700">Efficient, adaptive, and structured workforce management.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-[#1a4d8c] mt-1 flex-shrink-0" />
                                     <p className="text-gray-700">Long-term strategic partnership for sustainable growth.</p>
                                 </li>
                             </ul>
@@ -65,20 +65,20 @@ export default function About() {
                         {/* For Talent */}
                         <div className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300">
                             <h3 className="text-2xl font-bold text-black mb-6 flex items-center gap-3">
-                                <TrendingUp className="w-8 h-8 text-green-600" />
+                                <TrendingUp className="w-8 h-8 text-[#6db33f]" />
                                 For Talent
                             </h3>
                             <ul className="space-y-4">
                                 <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                                    <ShieldCheck className="w-5 h-5 text-[#6db33f] mt-1 flex-shrink-0" />
                                     <p className="text-gray-700">Clear, sustainable career paths and placement in meaningful roles.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                                    <ShieldCheck className="w-5 h-5 text-[#6db33f] mt-1 flex-shrink-0" />
                                     <p className="text-gray-700">Opportunities to develop competencies based on individual potential.</p>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <ShieldCheck className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                                    <ShieldCheck className="w-5 h-5 text-[#6db33f] mt-1 flex-shrink-0" />
                                     <p className="text-gray-700">Supportive ecosystem for long-term professional growth.</p>
                                 </li>
                             </ul>

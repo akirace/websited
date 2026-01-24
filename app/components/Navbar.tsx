@@ -38,7 +38,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`text-sm tracking-wide transition-colors ${isActive
-                ? 'font-bold text-black'
+                ? 'font-bold text-[#1a4d8c]'
                 : 'font-medium text-black/60 hover:text-black'
                 }`}
             >

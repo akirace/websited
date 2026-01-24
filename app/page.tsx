@@ -23,13 +23,13 @@ export default function Home() {
           <div className="max-w-xl py-24 md:py-0">
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-black md:text-5xl lg:text-6xl mb-6">
               Strategic Partner for <br />
-              <span className="text-gray-600">Talent Development</span>
+              <span className="text-[#1a4d8c]">Talent Development</span>
             </h1>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
               Talenvyra positions itself as a strategic partner for talent development rather than a traditional outsourcing vendor. We build sustainable careers and intelligent connections.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <button className="px-8 py-4 bg-[#1a4d8c] text-white rounded-full font-semibold hover:bg-[#2a6bb5] transition-all duration-300 shadow-lg hover:shadow-xl">
                 Explore Services
               </button>
               <button className="px-8 py-4 bg-white text-black border border-gray-200 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300">
@@ -51,10 +51,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Pillar 1 */}
             <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
-                <Users className="w-6 h-6 text-blue-600" />
+              <div className="w-12 h-12 bg-[#1a4d8c]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#1a4d8c]/20 transition-colors">
+                <Users className="w-6 h-6 text-[#1a4d8c]" />
               </div>
-              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-blue-600 transition-colors">Human-Centric Intelligence</h4>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-[#1a4d8c] transition-colors">Human-Centric Intelligence</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Focuses on human potential, character, and job readiness rather than just CV experience.
               </p>
@@ -62,10 +62,10 @@ export default function Home() {
 
             {/* Pillar 2 */}
             <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
-              <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-100 transition-colors">
-                <Target className="w-6 h-6 text-indigo-600" />
+              <div className="w-12 h-12 bg-[#00a8b5]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#00a8b5]/20 transition-colors">
+                <Target className="w-6 h-6 text-[#00a8b5]" />
               </div>
-              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-indigo-600 transition-colors">Talent-Driven Value</h4>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-[#00a8b5] transition-colors">Talent-Driven Value</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Provides relevant, high-value talent to improve client productivity and efficiency.
               </p>
@@ -73,10 +73,10 @@ export default function Home() {
 
             {/* Pillar 3 */}
             <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
-              <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors">
-                <Link className="w-6 h-6 text-purple-600" />
+              <div className="w-12 h-12 bg-[#d4a24c]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#d4a24c]/20 transition-colors">
+                <Link className="w-6 h-6 text-[#d4a24c]" />
               </div>
-              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-purple-600 transition-colors">Smart Talent Connection</h4>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-[#d4a24c] transition-colors">Smart Talent Connection</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Acts as an intelligent link between talent and organizations through systematic processes and technology.
               </p>
@@ -84,10 +84,10 @@ export default function Home() {
 
             {/* Pillar 4 */}
             <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
-              <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-100 transition-colors">
-                <Globe className="w-6 h-6 text-teal-600" />
+              <div className="w-12 h-12 bg-[#6db33f]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#6db33f]/20 transition-colors">
+                <Globe className="w-6 h-6 text-[#6db33f]" />
               </div>
-              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-teal-600 transition-colors">Sustainable Career Ecosystem</h4>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-[#6db33f] transition-colors">Sustainable Career Ecosystem</h4>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Facilitates long-term growth for both talent and companies in a thriving ecosystem.
               </p>

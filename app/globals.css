@@ -8,6 +8,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Talenvyra Brand Colors from Logo */
+  --brand-blue: #1a4d8c;
+  --brand-blue-light: #2a6bb5;
+  --brand-cyan: #00a8b5;
+  --brand-gold: #d4a24c;
+  --brand-gold-light: #e5b85a;
+  --brand-green: #6db33f;
+  --brand-magenta: #a83279;
 }
 
 body {

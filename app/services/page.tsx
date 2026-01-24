@@ -45,40 +45,40 @@ export default function Service() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* IT Staff Augmentation */}
                         <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
-                            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
-                                <Clock className="w-6 h-6 text-blue-600" />
+                            <div className="w-12 h-12 bg-[#1a4d8c]/10 rounded-xl flex items-center justify-center mb-6">
+                                <Clock className="w-6 h-6 text-[#1a4d8c]" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">IT Staff Augmentation</h3>
                             <p className="text-sm text-gray-600">Includes onshore, offshore, and nearshore assignments with a 48-hour turnaround time (TAT) for top talent.</p>
                         </div>
                         {/* Mass Recruitment */}
                         <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
-                            <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-6">
-                                <Users className="w-6 h-6 text-green-600" />
+                            <div className="w-12 h-12 bg-[#6db33f]/10 rounded-xl flex items-center justify-center mb-6">
+                                <Users className="w-6 h-6 text-[#6db33f]" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Mass Recruitment</h3>
                             <p className="text-sm text-gray-600">Targeted for high-volume hiring during seasonal peaks or large-scale launches.</p>
                         </div>
                         {/* Contract Staffing */}
                         <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
-                            <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
-                                <FileText className="w-6 h-6 text-orange-600" />
+                            <div className="w-12 h-12 bg-[#d4a24c]/10 rounded-xl flex items-center justify-center mb-6">
+                                <FileText className="w-6 h-6 text-[#d4a24c]" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Contract Staffing</h3>
                             <p className="text-sm text-gray-600">Designed for project-based or task-specific needs to save on manpower costs.</p>
                         </div>
                         {/* RPO */}
                         <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
-                            <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6">
-                                <Settings className="w-6 h-6 text-purple-600" />
+                            <div className="w-12 h-12 bg-[#a83279]/10 rounded-xl flex items-center justify-center mb-6">
+                                <Settings className="w-6 h-6 text-[#a83279]" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">RPO</h3>
                             <p className="text-sm text-gray-600">Recruitment Process Outsourcing providing end-to-end or partial recruitment support for business expansion.</p>
                         </div>
                         {/* One-time Permanent Hiring */}
                         <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
-                            <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-6">
-                                <UserCheck className="w-6 h-6 text-teal-600" />
+                            <div className="w-12 h-12 bg-[#00a8b5]/10 rounded-xl flex items-center justify-center mb-6">
+                                <UserCheck className="w-6 h-6 text-[#00a8b5]" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">Permanent Hiring</h3>
                             <p className="text-sm text-gray-600">Tailor-made searches for specialized expertise and executive positions.</p>
@@ -93,17 +93,17 @@ export default function Service() {
                     <h2 className="text-3xl font-bold text-center text-black mb-12">Delivery Methods</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <Globe className="w-8 h-8 text-indigo-600 mb-4" />
+                            <Globe className="w-8 h-8 text-[#1a4d8c] mb-4" />
                             <h3 className="text-lg font-bold mb-2">Offshore Managed</h3>
                             <p className="text-sm text-gray-600">Teams deployed offshore, managed by Talenvyra/Client partners with daily/weekly communication.</p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <BriefcaseIcon className="w-8 h-8 text-indigo-600 mb-4" />
+                            <BriefcaseIcon className="w-8 h-8 text-[#00a8b5] mb-4" />
                             <h3 className="text-lg font-bold mb-2">Onshore Managed</h3>
                             <p className="text-sm text-gray-600">Teams present at the client's office for projects requiring physical presence.</p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <Search className="w-8 h-8 text-indigo-600 mb-4" />
+                            <Search className="w-8 h-8 text-[#6db33f] mb-4" />
                             <h3 className="text-lg font-bold mb-2">Resource Augmentation</h3>
                             <p className="text-sm text-gray-600">Resources allocated based on technical expertise, managed directly by the client.</p>
                         </div>

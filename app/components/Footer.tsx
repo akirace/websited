@@ -12,13 +12,13 @@ export default function Footer() {
                     </p>
                     <div className="flex gap-4">
                         {/* Social Icons Placeholder */}
-                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1a4d8c] transition-colors cursor-pointer">
                             <span className="text-xs">Li</span>
                         </div>
-                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1a4d8c] transition-colors cursor-pointer">
                             <span className="text-xs">Ig</span>
                         </div>
-                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
+                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1a4d8c] transition-colors cursor-pointer">
                             <span className="text-xs">Tw</span>
                         </div>
                     </div>

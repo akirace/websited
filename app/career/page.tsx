@@ -23,7 +23,7 @@ export default function Career() {
                     <div className="max-w-xl py-24 md:py-0">
                         <h1 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-3xl lg:text-4xl mb-6">
                             Sustainable <br />
-                            <span className="text-teal-600">Career Ecosystem</span>
+                            <span className="text-[#6db33f]">Career Ecosystem</span>
                         </h1>
                         <div className="text-base text-gray-700 font-medium space-y-4">
                             <p>
@@ -39,7 +39,7 @@ export default function Career() {
 
             {/* SECTION 3: CTA */}
             <section className="w-full px-8 md:px-24 py-20 bg-white flex items-center justify-center">
-                <div className="w-full bg-gray-900 rounded-3xl px-12 py-16 text-center">
+                <div className="w-full bg-[#1a4d8c] rounded-3xl px-12 py-16 text-center">
                     <h2 className="text-3xl font-bold text-white mb-4">
                         Start Your Journey with Talenvyra
                     </h2>
@@ -47,7 +47,7 @@ export default function Career() {
                         Ready to accelerate your career? Join our ecosystem today.
                     </p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                        <button className="px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                        <button className="px-6 py-3 bg-white text-[#1a4d8c] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300">
                             Submit Your Resume
                         </button>
                         <span className="text-gray-400">or</span>
