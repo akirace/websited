@@ -2,7 +2,8 @@ import Image from "next/image";
 import {
     Users, Code, Database, Layout, Settings, Monitor, Layers, Smartphone, Apple,
     GitBranch, Coffee, Triangle, ClipboardCheck, Bot, Activity, FileText,
-    BarChart, Lightbulb, Network, Briefcase, UserCog, MoreHorizontal
+    BarChart, Lightbulb, Network, Briefcase, UserCog, MoreHorizontal,
+    Globe, Clock, UserCheck, Briefcase as BriefcaseIcon, Search
 } from "lucide-react";
 
 export default function Service() {
@@ -14,7 +15,7 @@ export default function Service() {
                 <div className="absolute top-0 right-0 h-full w-[50%] z-0">
                     <Image
                         src="https://qb1.vc/static/media/bg-home-3.f19e57920cfa879a9f85.jpg"
-                        alt="IT Professional Resource Outsourcing"
+                        alt="Core Services & Delivery Models"
                         fill
                         priority
                         sizes="50vw"
@@ -26,27 +27,97 @@ export default function Service() {
                 <div className="relative z-10 flex w-full flex-col justify-center px-8 md:w-1/2 md:px-24 h-full">
                     <div className="max-w-xl py-24 md:py-0">
                         <h1 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-3xl lg:text-4xl mb-6">
-                            IT Professional Resource Outsourcing
+                            Core Services & Delivery Models
                         </h1>
                         <div className="text-base text-gray-700 font-medium space-y-4">
                             <p>
-                                Our IT Professional Resource Outsourcing service delivers dependable, high quality IT talent designed to strengthen your organization's technological capabilities.
-                            </p>
-                            <p>
-                                We provide thoroughly screened and industry certified professionals from analysts and developers to engineers and support specialists ensuring you receive the right expertise at the right time.
-                            </p>
-                            <p>
-                                With a flexible engagement model, strict service standards, and ongoing performance monitoring, we help your company reduce hiring risks, accelerate project delivery, and maintain operational excellence.
+                                We offer specialized IT staffing and dedicated teams with a focus on speed and quality. Our models are designed to adapt to your specific business needs, ensuring you get the right talent at the right time.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* SECTION 2: Our Services Roles */}
-            <section className="w-full px-8 md:px-16 py-16 pb-8 bg-white">
+            {/* SECTION 2: Augmentation & Staffing Models */}
+            <section className="w-full px-8 md:px-16 py-20 bg-white">
+                <div className="w-full max-w-7xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center text-black mb-12">Augmentation & Staffing Models</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* IT Staff Augmentation */}
+                        <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+                            <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                                <Clock className="w-6 h-6 text-blue-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">IT Staff Augmentation</h3>
+                            <p className="text-sm text-gray-600">Includes onshore, offshore, and nearshore assignments with a 48-hour turnaround time (TAT) for top talent.</p>
+                        </div>
+                        {/* Mass Recruitment */}
+                        <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+                            <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-6">
+                                <Users className="w-6 h-6 text-green-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">Mass Recruitment</h3>
+                            <p className="text-sm text-gray-600">Targeted for high-volume hiring during seasonal peaks or large-scale launches.</p>
+                        </div>
+                        {/* Contract Staffing */}
+                        <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+                            <div className="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6">
+                                <FileText className="w-6 h-6 text-orange-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">Contract Staffing</h3>
+                            <p className="text-sm text-gray-600">Designed for project-based or task-specific needs to save on manpower costs.</p>
+                        </div>
+                        {/* RPO */}
+                        <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+                            <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6">
+                                <Settings className="w-6 h-6 text-purple-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">RPO</h3>
+                            <p className="text-sm text-gray-600">Recruitment Process Outsourcing providing end-to-end or partial recruitment support for business expansion.</p>
+                        </div>
+                        {/* One-time Permanent Hiring */}
+                        <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+                            <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-6">
+                                <UserCheck className="w-6 h-6 text-teal-600" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">Permanent Hiring</h3>
+                            <p className="text-sm text-gray-600">Tailor-made searches for specialized expertise and executive positions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 3: Delivery Methods */}
+            <section className="w-full px-8 md:px-16 py-20 bg-gray-50">
+                <div className="w-full max-w-7xl mx-auto">
+                    <h2 className="text-3xl font-bold text-center text-black mb-12">Delivery Methods</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <Globe className="w-8 h-8 text-indigo-600 mb-4" />
+                            <h3 className="text-lg font-bold mb-2">Offshore Managed</h3>
+                            <p className="text-sm text-gray-600">Teams deployed offshore, managed by Talenvyra/Client partners with daily/weekly communication.</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <BriefcaseIcon className="w-8 h-8 text-indigo-600 mb-4" />
+                            <h3 className="text-lg font-bold mb-2">Onshore Managed</h3>
+                            <p className="text-sm text-gray-600">Teams present at the client's office for projects requiring physical presence.</p>
+                        </div>
+                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <Search className="w-8 h-8 text-indigo-600 mb-4" />
+                            <h3 className="text-lg font-bold mb-2">Resource Augmentation</h3>
+                            <p className="text-sm text-gray-600">Resources allocated based on technical expertise, managed directly by the client.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECTION 4: Technical Expertise (Previous Services Roles) */}
+            <section className="w-full px-8 md:px-16 py-20 bg-white">
                 <div className="w-full">
-                    <h2 className="text-3xl font-bold text-center text-black mb-12">Our Services Roles</h2>
+                    <h2 className="text-3xl font-bold text-center text-black mb-12">Technical Expertise & Industry Focus</h2>
+                    <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                        Talenvyra maintains a broad pipeline across various technology stacks including Java, .NET, Python, Data Science, AI/ML, Cloud (AWS/Azure), and more.
+                    </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {/* Service Role Items */}
@@ -89,7 +160,7 @@ export default function Service() {
                 </div>
             </section>
 
-            {/* SECTION 3: Our Partners */}
+            {/* SECTION 5: Our Partners */}
             <section className="w-full px-8 md:px-16 pt-8 pb-20 bg-white">
                 <div className="w-full">
                     <h2 className="text-3xl font-bold text-center text-black mb-12">Partners</h2>

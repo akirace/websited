@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Qubicle One Venture",
-  description: "Where Utopian Visions Become Reality",
+  title: "Talenvyra",
+  description: "Strategic Partner for Talent Development",
+  icons: {
+    icon: "https://strapi.ackerlabs.my.id/uploads/Whats_App_Image_2026_01_22_at_10_00_50_PM_1_1_removebg_preview_22ca0fa990.png",
+  },
 };
 
 export default function RootLayout({

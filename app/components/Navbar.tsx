@@ -20,14 +20,14 @@ export default function Navbar() {
         {/* Remote Logo */}
         <div className="relative w-10 h-10">
           <Image
-            src="https://strapi.ackerlabs.my.id/uploads/cubicle_logo_81b6ca55d4.png"
-            alt="Qubicle One Logo"
+            src="https://strapi.ackerlabs.my.id/uploads/Whats_App_Image_2026_01_22_at_10_00_50_PM_1_1_removebg_preview_22ca0fa990.png"
+            alt="Talenvyra Logo"
             fill
             className="object-contain"
             priority
           />
         </div>
-        <span className="text-xl font-bold tracking-tight text-black">Qubicle One</span>
+        <span className="text-xl font-bold tracking-tight text-black">Talenvyra</span>
       </Link>
 
       <div className="hidden md:flex items-center gap-8">

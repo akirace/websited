@@ -1,16 +1,16 @@
 import Image from "next/image";
+import { Users, Target, Link, Globe } from "lucide-react";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col">
       {/* SECTION 1: Hero */}
-      {/* SECTION 1: Hero */}
       <section className="relative flex min-h-screen w-full flex-col justify-center overflow-hidden">
-        {/* Image Container - Constrained to right side to reduce width */}
+        {/* Image Container - Right side */}
         <div className="absolute top-0 right-0 h-full w-[50%] z-0">
           <Image
-            src="http://qb1.vc/static/media/bg-home-1.f340b72710b5e8adf0e6.jpg"
-            alt="Hero Background"
+            src="https://qb1.vc/static/media/bg-home-1.f340b72710b5e8adf0e6.jpg"
+            alt="Talenvyra - Strategic Partner for Talent Development"
             fill
             priority
             sizes="50vw"
@@ -18,98 +18,81 @@ export default function Home() {
           />
         </div>
 
-        {/* Content Section - Overlaying the image (Left side) */}
-        {/* The image already has a white diagonal area on the left, so we just place text over it. */}
-        <div className="relative z-10 flex w-full flex-col justify-center px-8 md:w-[60%] md:px-24 h-full pointer-events-none">
-          <div className="max-w-xl pt-24 md:pt-0 pointer-events-auto">
-            {/* Reduced title size as requested */}
-            <h1 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-3xl lg:text-4xl mb-6">
-              Welcome to Qubicle One Venture: Where
-              Utopian Visions Become Reality
+        {/* Content Section - Left side */}
+        <div className="relative z-10 flex w-full flex-col justify-center px-8 md:w-1/2 md:px-24 h-full">
+          <div className="max-w-xl py-24 md:py-0">
+            <h1 className="text-4xl font-bold leading-tight tracking-tight text-black md:text-5xl lg:text-6xl mb-6">
+              Strategic Partner for <br />
+              <span className="text-gray-600">Talent Development</span>
             </h1>
-            <p className="text-base text-gray-700 font-medium">
-              Empowering Innovators to Optimize Resources and Elevate Life Quality
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed font-medium">
+              Talenvyra positions itself as a strategic partner for talent development rather than a traditional outsourcing vendor. We build sustainable careers and intelligent connections.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="px-8 py-4 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Explore Services
+              </button>
+              <button className="px-8 py-4 bg-white text-black border border-gray-200 rounded-full font-semibold hover:bg-gray-50 transition-all duration-300">
+                Contact Us
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 2: Innovation */}
-      <section className="relative flex min-h-screen w-full flex-col md:flex-row overflow-hidden bg-white">
-        {/* Left Image Section with Angled Clip */}
-        {/* On Desktop: Image is on the Left, Text on the Right */}
-        <div className="absolute top-0 left-0 h-full w-[50%] z-0 hidden md:block">
-          <Image
-            src="https://qb1.vc/static/media/bg-home-2.4ed26e4a8364aac26929.jpg"
-            alt="Innovation Background"
-            fill
-            sizes="50vw"
-            className="object-cover object-left"
-          />
-        </div>
-
-        {/* Mobile Image Fallback */}
-        <div className="relative h-64 w-full md:hidden">
-          <Image
-            src="https://qb1.vc/static/media/bg-home-2.4ed26e4a8364aac26929.jpg"
-            alt="Innovation Background"
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
-        </div>
-
-        {/* Right Content Section */}
-        {/* We use ml-auto to push it to the right, and give it appropriate padding */}
-        <div className="z-10 flex w-full flex-col justify-center bg-transparent px-8 md:w-1/2 md:ml-auto md:pl-32 md:pr-12">
-          <div className="max-w-xl py-12 md:py-0">
-            <h2 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-4xl lg:text-4xl mb-6">
-              Qubicle One Ventures: Igniting the Spark of Global Innovation and Exceptional Design
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              We are committed to nurturing and investing in diverse companies that are at the forefront of advancing product innovation and enriching customer experiences.
-            </p>
+      {/* SECTION 2: Core Pillars */}
+      <section className="w-full px-8 md:px-24 py-24 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-semibold tracking-widest text-gray-500 uppercase mb-3">Our Foundation</h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-black">Four Core Pillars</h3>
           </div>
-        </div>
-      </section>
 
-      {/* SECTION 3: Innovation at Our Core */}
-      <section className="relative flex min-h-screen w-full flex-col md:flex-row overflow-hidden bg-white">
-        {/* Left Content Section */}
-        <div className="z-10 flex w-full flex-col justify-center bg-white px-8 md:w-1/2 md:px-24 md:pr-32">
-          <div className="max-w-xl py-12 md:py-0">
-            <h2 className="text-3xl font-bold leading-tight tracking-tight text-black md:text-4xl lg:text-4xl mb-6">
-              Innovation at Our Core
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              We inspire our entrepreneurs to pioneer technologies that deliver tangible benefits for
-              industry leaders. Our skilled engineers collaborate closely with our portfolio companies,
-              tackling critical challenges and enabling them to concentrate on growth and
-              performance.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Pillar 1 */}
+            <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
+              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
+                <Users className="w-6 h-6 text-blue-600" />
+              </div>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-blue-600 transition-colors">Human-Centric Intelligence</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Focuses on human potential, character, and job readiness rather than just CV experience.
+              </p>
+            </div>
+
+            {/* Pillar 2 */}
+            <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
+              <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-100 transition-colors">
+                <Target className="w-6 h-6 text-indigo-600" />
+              </div>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-indigo-600 transition-colors">Talent-Driven Value</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Provides relevant, high-value talent to improve client productivity and efficiency.
+              </p>
+            </div>
+
+            {/* Pillar 3 */}
+            <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
+              <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-100 transition-colors">
+                <Link className="w-6 h-6 text-purple-600" />
+              </div>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-purple-600 transition-colors">Smart Talent Connection</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Acts as an intelligent link between talent and organizations through systematic processes and technology.
+              </p>
+            </div>
+
+            {/* Pillar 4 */}
+            <div className="group p-8 border border-gray-100 rounded-2xl hover:border-gray-200 hover:shadow-xl transition-all duration-300 bg-white">
+              <div className="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-100 transition-colors">
+                <Globe className="w-6 h-6 text-teal-600" />
+              </div>
+              <h4 className="text-xl font-bold text-black mb-3 group-hover:text-teal-600 transition-colors">Sustainable Career Ecosystem</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Facilitates long-term growth for both talent and companies in a thriving ecosystem.
+              </p>
+            </div>
           </div>
-        </div>
-
-        {/* Right Image Section with Angled Clip */}
-        <div className="absolute top-0 right-0 h-full w-[50%] z-0 hidden md:block">
-          <Image
-            src="https://qb1.vc/static/media/bg-home-3.f19e57920cfa879a9f85.jpg"
-            alt="Core Innovation"
-            fill
-            sizes="50vw"
-            className="object-cover"
-          />
-        </div>
-
-        {/* Mobile Image Fallback */}
-        <div className="relative h-64 w-full md:hidden">
-          <Image
-            src="https://qb1.vc/static/media/bg-home-3.f19e57920cfa879a9f85.jpg"
-            alt="Core Innovation"
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
         </div>
       </section>
     </main>
