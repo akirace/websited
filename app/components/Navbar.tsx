@@ -8,6 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
+    { name: 'Home', href: '/home' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Career', href: '/career' },
@@ -16,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 flex items-center justify-between px-8 py-4 bg-white/95 backdrop-blur-sm shadow-sm md:px-12">
-      <Link href="/" className="flex items-center gap-4">
+      <Link href="/home" className="flex items-center gap-4">
         {/* Remote Logo */}
         <div className="relative w-10 h-10">
           <Image

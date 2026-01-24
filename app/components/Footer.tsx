@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-500">Connect</h3>
-                        <a href="mailto:recruit@talenvyra.com" className="text-sm text-gray-300 hover:text-white transition-colors">recruit@talenvyra.com</a>
+                        <a href="mailto:talentvyra.recuitment@gmail.com" className="text-sm text-gray-300 hover:text-white transition-colors">talentvyra.recuitment@gmail.com</a>
                         <div className="text-xs text-gray-400 mt-2 leading-relaxed">
                             <p className="font-semibold text-gray-300 uppercase mb-1">Office</p>
                             <p>Latinos Bussines District, Jl. Raya Rawa Buntu Blk. C8 No.18, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten</p>
