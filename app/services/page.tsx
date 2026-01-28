@@ -278,6 +278,8 @@ export default function Service() {
                             { src: "https://strapi.ackerlabs.my.id/uploads/sifang_7204400dd5.jpg", name: "PT Sifang" },
                             { src: "https://strapi.ackerlabs.my.id/uploads/indocyber_2cd96ab486.png", name: "Indocyber" },
                             { src: "https://strapi.ackerlabs.my.id/uploads/LOGO_BG_TERANG_74e806bec3.png", name: "Raxsa.co" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/maxy_8ba6692a5e.png", name: "Maxy Academy" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/komparase_59c79a6059.png", name: "Komparase" },
                         ].map((partner, index) => (
                             <div
                                 key={`first-${index}`}
@@ -304,6 +306,8 @@ export default function Service() {
                             { src: "https://strapi.ackerlabs.my.id/uploads/sifang_7204400dd5.jpg", name: "PT Sifang" },
                             { src: "https://strapi.ackerlabs.my.id/uploads/indocyber_2cd96ab486.png", name: "Indocyber" },
                             { src: "https://strapi.ackerlabs.my.id/uploads/LOGO_BG_TERANG_74e806bec3.png", name: "Raxsa.co" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/maxy_8ba6692a5e.png", name: "Maxy Academy" },
+                            { src: "https://strapi.ackerlabs.my.id/uploads/komparase_59c79a6059.png", name: "Komparase" },
                         ].map((partner, index) => (
                             <div
                                 key={`second-${index}`}
