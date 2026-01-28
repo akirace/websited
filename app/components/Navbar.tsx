@@ -21,14 +21,17 @@ export default function Navbar() {
         {/* Remote Logo */}
         <div className="relative w-10 h-10">
           <Image
-            src="https://strapi.ackerlabs.my.id/uploads/Whats_App_Image_2026_01_22_at_10_00_50_PM_1_1_removebg_preview_22ca0fa990.png"
+            src="https://strapi.ackerlabs.my.id/uploads/Whats_App_Image_2026_01_22_at_10_00_50_PM_1_1_17178651fe.jpeg"
             alt="Talenvyra Logo"
             fill
             className="object-contain"
             priority
           />
         </div>
-        <span className="text-xl font-bold tracking-tight text-black">Talenvyra</span>
+        <span className="text-xl font-bold tracking-tight">
+          <span className="text-[#0c244d]">TALEN</span>
+          <span className="text-[#7cb82a]">VYRA</span>
+        </span>
       </Link>
 
       <div className="hidden md:flex items-center gap-8">

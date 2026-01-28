@@ -1,32 +1,11 @@
+
+
 "use client";
 
 import Image from "next/image";
 import { Users, Target, Link, Globe } from "lucide-react";
-import { useState, useRef } from "react";
 
 export default function Home() {
-    const [transform, setTransform] = useState({ rotateX: 0, rotateY: 0 });
-    const imageRef = useRef<HTMLDivElement>(null);
-
-    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-        if (!imageRef.current) return;
-
-        const rect = imageRef.current.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const rotateX = ((y - centerY) / centerY) * -10;
-        const rotateY = ((x - centerX) / centerX) * 10;
-
-        setTransform({ rotateX, rotateY });
-    };
-
-    const handleMouseLeave = () => {
-        setTransform({ rotateX: 0, rotateY: 0 });
-    };
 
     return (
         <main className="flex min-h-screen w-full flex-col">
@@ -43,17 +22,9 @@ export default function Home() {
                 </div>
 
                 {/* Hero Image with Parallax Hover Effect */}
-                <div className="max-w-5xl mx-auto" style={{ perspective: "1000px" }}>
+                <div className="max-w-5xl mx-auto">
                     <div
-                        ref={imageRef}
-                        onMouseMove={handleMouseMove}
-                        onMouseLeave={handleMouseLeave}
-                        className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl cursor-pointer"
-                        style={{
-                            transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg)`,
-                            transition: "transform 0.1s ease-out",
-                            transformStyle: "preserve-3d",
-                        }}
+                        className="relative w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl"
                     >
                         <Image
                             src="https://strapi.ackerlabs.my.id/uploads/business_executives_discussing_with_their_colleagues_whiteboa_00d53ce4ca.jpg"

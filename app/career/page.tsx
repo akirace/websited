@@ -2,27 +2,10 @@
 
 import Image from "next/image";
 import { Sparkles, TrendingUp, Users, Target, Heart, Mail, ArrowRight, CheckCircle2 } from "lucide-react";
-import { useState, useRef } from "react";
+
 
 export default function Career() {
-    const [transform, setTransform] = useState({ rotateX: 0, rotateY: 0 });
-    const imageRef = useRef<HTMLDivElement>(null);
 
-    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-        if (!imageRef.current) return;
-        const rect = imageRef.current.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-        const rotateX = ((y - centerY) / centerY) * -8;
-        const rotateY = ((x - centerX) / centerX) * 8;
-        setTransform({ rotateX, rotateY });
-    };
-
-    const handleMouseLeave = () => {
-        setTransform({ rotateX: 0, rotateY: 0 });
-    };
 
     return (
         <main className="flex min-h-screen w-full flex-col">
@@ -113,17 +96,9 @@ export default function Career() {
                         </div>
 
                         {/* Right - Image with Parallax Effect */}
-                        <div className="order-1 lg:order-2" style={{ perspective: "1000px" }}>
+                        <div className="order-1 lg:order-2">
                             <div
-                                ref={imageRef}
-                                onMouseMove={handleMouseMove}
-                                onMouseLeave={handleMouseLeave}
                                 className="relative cursor-pointer"
-                                style={{
-                                    transform: `rotateX(${transform.rotateX}deg) rotateY(${transform.rotateY}deg)`,
-                                    transition: "transform 0.15s ease-out",
-                                    transformStyle: "preserve-3d",
-                                }}
                             >
                                 {/* Main Image */}
                                 <div className="relative w-full h-[450px] md:h-[550px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl">

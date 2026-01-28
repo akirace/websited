@@ -10,18 +10,6 @@ export default function Footer() {
                     <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
                         Strategic Partner for Talent Development. Fostering human-centric intelligence and sustainable career ecosystems.
                     </p>
-                    <div className="flex gap-4">
-                        {/* Social Icons Placeholder */}
-                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1a4d8c] transition-colors cursor-pointer">
-                            <span className="text-xs">Li</span>
-                        </div>
-                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1a4d8c] transition-colors cursor-pointer">
-                            <span className="text-xs">Ig</span>
-                        </div>
-                        <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1a4d8c] transition-colors cursor-pointer">
-                            <span className="text-xs">Tw</span>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Links Sections */}
@@ -34,13 +22,13 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col gap-4">
                         <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-500">Services</h3>
+                        <a href="/services" className="text-sm text-gray-300 hover:text-white transition-colors">IT Solutions</a>
                         <a href="/services" className="text-sm text-gray-300 hover:text-white transition-colors">IT Staffing</a>
-                        <a href="/services" className="text-sm text-gray-300 hover:text-white transition-colors">Augmentation</a>
-                        <a href="/services" className="text-sm text-gray-300 hover:text-white transition-colors">Solutions</a>
+                        <a href="/services" className="text-sm text-gray-300 hover:text-white transition-colors">IT Business Partner</a>
                     </div>
                     <div className="flex flex-col gap-4">
                         <h3 className="text-sm font-semibold tracking-wider uppercase text-gray-500">Connect</h3>
-                        <a href="mailto:talentvyra.recuitment@gmail.com" className="text-sm text-gray-300 hover:text-white transition-colors">talentvyra.recuitment@gmail.com</a>
+                        <a href="mailto:talenvyra.recuitment@gmail.com" className="text-sm text-gray-300 hover:text-white transition-colors">talenvyra.recuitment@gmail.com</a>
                         <div className="text-xs text-gray-400 mt-2 leading-relaxed">
                             <p className="font-semibold text-gray-300 uppercase mb-1">Office</p>
                             <p>Latinos Bussines District, Jl. Raya Rawa Buntu Blk. C8 No.18, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten</p>
