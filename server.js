@@ -2,6 +2,9 @@ const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');
 
+// Set production mode (for Windows compatibility)
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
+
 const dev = process.env.NODE_ENV !== 'production';
 const hostname = process.env.HOST || '0.0.0.0';
 const port = parseInt(process.env.PORT, 10) || 3000;
