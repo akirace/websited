@@ -16,8 +16,8 @@ export default function About() {
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#d4a24c]/10 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00a8b5]/5 rounded-full blur-3xl"></div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-28">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 md:px-16 py-12 md:py-28">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center">
                         {/* Left Content */}
                         <div className="order-2 lg:order-1">
                             {/* Badge */}
@@ -38,17 +38,17 @@ export default function About() {
                             </p>
 
                             {/* Stats Cards */}
-                            <div className="grid grid-cols-3 gap-4 mb-8">
+                            <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 md:mb-8">
                                 <div className="text-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
-                                    <div className="text-2xl md:text-3xl font-bold text-[#1a4d8c]">10K+</div>
+                                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1a4d8c]">10K+</div>
                                     <div className="text-xs text-gray-500 mt-1">Curated CVs</div>
                                 </div>
                                 <div className="text-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
-                                    <div className="text-2xl md:text-3xl font-bold text-[#00a8b5]">500+</div>
+                                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#00a8b5]">500+</div>
                                     <div className="text-xs text-gray-500 mt-1">Placements</div>
                                 </div>
                                 <div className="text-center p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
-                                    <div className="text-2xl md:text-3xl font-bold text-[#6db33f]">50+</div>
+                                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#6db33f]">50+</div>
                                     <div className="text-xs text-gray-500 mt-1">Partners</div>
                                 </div>
                             </div>
@@ -114,11 +114,11 @@ export default function About() {
             </section>
 
             {/* SECTION 2: Value Proposition */}
-            <section className="w-full px-8 md:px-24 py-24 bg-gray-50">
+            <section className="w-full px-5 sm:px-8 md:px-24 py-16 md:py-24 bg-gray-50">
                 <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                         {/* For Clients */}
-                        <div className="bg-white p-10 rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div className="bg-white p-6 sm:p-8 md:p-10 rounded-2xl md:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300">
                             <h3 className="text-2xl font-bold text-black mb-6 flex items-center gap-3">
                                 <Users className="w-8 h-8 text-[#1a4d8c]" />
                                 For Clients

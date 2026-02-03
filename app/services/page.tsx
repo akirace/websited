@@ -21,8 +21,8 @@ export default function Service() {
                 <div className="absolute bottom-10 left-20 w-72 h-72 bg-[#6db33f]/10 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/3 left-1/4 w-40 h-40 bg-[#d4a24c]/10 rounded-full blur-2xl"></div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-28">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 md:px-16 py-12 md:py-28">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                         {/* Left Content */}
                         <div className="order-2 lg:order-1">
                             {/* Badge */}
@@ -31,20 +31,20 @@ export default function Service() {
                                 <span className="text-sm font-semibold text-[#1a4d8c]">Our Services</span>
                             </div>
 
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-black mb-6">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-black mb-4 md:mb-6">
                                 Core Services &{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1a4d8c] via-[#00a8b5] to-[#6db33f]">
                                     Delivery Models
                                 </span>
                             </h1>
 
-                            <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
+                            <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 md:mb-8 max-w-lg">
                                 We offer specialized IT staffing and dedicated teams with a focus on speed and quality. Our models are designed to adapt to your specific business needs.
                             </p>
 
                             {/* Feature Pills */}
-                            <div className="grid grid-cols-2 gap-4 mb-8">
-                                <div className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                            <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
+                                <div className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                                     <div className="w-10 h-10 bg-[#1a4d8c]/10 rounded-lg flex items-center justify-center">
                                         <Clock className="w-5 h-5 text-[#1a4d8c]" />
                                     </div>
@@ -89,7 +89,7 @@ export default function Service() {
                                 className="relative cursor-pointer"
                             >
                                 {/* Main Image */}
-                                <div className="relative w-full h-[400px] md:h-[500px] lg:h-[550px] rounded-3xl overflow-hidden shadow-2xl">
+                                <div className="relative w-full h-[280px] sm:h-[350px] md:h-[500px] lg:h-[550px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
                                         src="https://strapi.ackerlabs.my.id/uploads/millennial_group_young_asia_businesspeople_small_modern_office_japanese_male_boss_supervisor_teaching_intern_new_employee_chinese_young_guy_helping_with_difficult_assignment_meeting_room_f8f972717d.jpg"
                                         alt="Talenvyra Services - IT Staffing and Delivery"
@@ -131,12 +131,12 @@ export default function Service() {
             </section>
 
             {/* SECTION 2: Augmentation & Staffing Models */}
-            <section className="w-full px-8 md:px-16 py-20 bg-white">
+            <section className="w-full px-5 sm:px-8 md:px-16 py-12 md:py-20 bg-white">
                 <div className="w-full max-w-7xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center text-black mb-12">Augmentation & Staffing Models</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center text-black mb-8 md:mb-12">Augmentation & Staffing Models</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                         {/* IT Staff Augmentation */}
-                        <div className="p-8 border border-gray-100 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+                        <div className="p-5 md:p-8 border border-gray-100 rounded-xl md:rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
                             <div className="w-12 h-12 bg-[#1a4d8c]/10 rounded-xl flex items-center justify-center mb-6">
                                 <Clock className="w-6 h-6 text-[#1a4d8c]" />
                             </div>
@@ -180,11 +180,11 @@ export default function Service() {
             </section>
 
             {/* SECTION 3: Delivery Methods */}
-            <section className="w-full px-8 md:px-16 py-20 bg-gray-50">
+            <section className="w-full px-5 sm:px-8 md:px-16 py-12 md:py-20 bg-gray-50">
                 <div className="w-full max-w-7xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center text-black mb-12">Delivery Methods</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center text-black mb-8 md:mb-12">Delivery Methods</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+                        <div className="bg-white p-5 md:p-8 rounded-xl md:rounded-2xl shadow-sm">
                             <Globe className="w-8 h-8 text-[#1a4d8c] mb-4" />
                             <h3 className="text-lg font-bold mb-2">Offshore Managed</h3>
                             <p className="text-sm text-gray-600">Teams deployed offshore, managed by Talenvyra/Client partners with daily/weekly communication.</p>
@@ -204,14 +204,14 @@ export default function Service() {
             </section>
 
             {/* SECTION 4: Technical Expertise (Previous Services Roles) */}
-            <section className="w-full px-8 md:px-16 py-20 bg-white">
+            <section className="w-full px-5 sm:px-8 md:px-16 py-12 md:py-20 bg-white">
                 <div className="w-full">
-                    <h2 className="text-3xl font-bold text-center text-black mb-12">Technical Expertise & Industry Focus</h2>
-                    <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center text-black mb-8 md:mb-12">Technical Expertise & Industry Focus</h2>
+                    <p className="text-center text-sm md:text-base text-gray-600 max-w-3xl mx-auto mb-8 md:mb-12 px-2">
                         Talenvyra maintains a broad pipeline across various technology stacks including Java, .NET, Python, Data Science, AI/ML, Cloud (AWS/Azure), and more.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
                         {/* Service Role Items */}
                         {[
                             { Icon: Users, name: "Scrum Master" },
@@ -241,10 +241,10 @@ export default function Service() {
                             return (
                                 <div
                                     key={index}
-                                    className="flex items-center justify-center gap-3 p-4 border border-gray-200 rounded-lg transition-all duration-300 hover:shadow-lg cursor-pointer bg-white"
+                                    className="flex flex-col items-center justify-center gap-2 p-3 md:p-4 border border-gray-200 rounded-xl transition-all duration-300 hover:shadow-lg hover:border-[#1a4d8c]/30 cursor-pointer bg-white group"
                                 >
-                                    <IconComponent className="w-5 h-5 text-gray-700" strokeWidth={1.5} />
-                                    <span className="text-sm font-medium text-gray-800">{role.name}</span>
+                                    <IconComponent className="w-5 h-5 md:w-6 md:h-6 text-gray-600 group-hover:text-[#1a4d8c] transition-colors" strokeWidth={1.5} />
+                                    <span className="text-xs md:text-sm font-medium text-gray-800 text-center leading-tight">{role.name}</span>
                                 </div>
                             );
                         })}

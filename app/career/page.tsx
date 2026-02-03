@@ -17,30 +17,30 @@ export default function Career() {
                 <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-[#00a8b5]/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-1/3 left-1/3 w-48 h-48 bg-[#d4a24c]/10 rounded-full blur-2xl"></div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-20 md:py-28">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 md:px-16 py-12 md:py-28">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                         {/* Left Content */}
                         <div className="order-2 lg:order-1">
                             {/* Badge */}
-                            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#6db33f]/10 to-[#00a8b5]/10 rounded-full mb-8 border border-[#6db33f]/20">
+                            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-gradient-to-r from-[#6db33f]/10 to-[#00a8b5]/10 rounded-full mb-6 md:mb-8 border border-[#6db33f]/20">
                                 <Sparkles className="w-4 h-4 text-[#6db33f]" />
                                 <span className="text-sm font-semibold text-[#6db33f]">Join Our Team</span>
                             </div>
 
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-black mb-6">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-black mb-4 md:mb-6">
                                 Build a{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6db33f] via-[#00a8b5] to-[#1a4d8c]">
                                     Sustainable Career
                                 </span>
                             </h1>
 
-                            <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-lg">
+                            <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 md:mb-8 max-w-lg">
                                 At Talenvyra, we facilitate long-term growth for both talent and companies. Our ecosystem is designed to focus on human potential, ensuring your career aligns with your goals.
                             </p>
 
                             {/* Benefits Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                                <div className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
+                            <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
+                                <div className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
                                     <div className="w-10 h-10 bg-[#6db33f]/10 rounded-lg flex items-center justify-center">
                                         <TrendingUp className="w-5 h-5 text-[#6db33f]" />
                                     </div>
@@ -79,18 +79,29 @@ export default function Career() {
                             </div>
 
                             {/* CTA Section */}
-                            <div className="bg-gradient-to-r from-[#1a4d8c] to-[#00a8b5] p-6 rounded-2xl shadow-xl">
-                                <h3 className="text-xl font-bold text-white mb-2">Start Your Journey Today</h3>
+                            <div className="bg-gradient-to-r from-[#1a4d8c] to-[#00a8b5] p-4 sm:p-6 rounded-2xl shadow-xl">
+                                <h3 className="text-lg sm:text-xl font-bold text-white mb-2">Start Your Journey Today</h3>
                                 <p className="text-sm text-white/80 mb-4">Ready to accelerate your career? Join our ecosystem.</p>
                                 <div className="flex flex-col gap-4">
                                     <a
-                                        href="mailto:talentvyra.recuitment@gmail.com"
+                                        href="https://bit.ly/TalenvyraRecruitment"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white text-[#1a4d8c] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 w-fit"
                                     >
                                         <Mail className="w-4 h-4" />
                                         Submit Your Resume
                                         <ArrowRight className="w-4 h-4" />
                                     </a>
+                                    <p className="text-sm text-white/80">
+                                        or email to{" "}
+                                        <a
+                                            href="mailto:talenvyra.recuitment@gmail.com"
+                                            className="text-white underline hover:text-white/90 transition-colors"
+                                        >
+                                            talenvyra.recuitment@gmail.com
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +112,7 @@ export default function Career() {
                                 className="relative cursor-pointer"
                             >
                                 {/* Main Image */}
-                                <div className="relative w-full h-[450px] md:h-[550px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl">
+                                <div className="relative w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-[650px] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                                     <Image
                                         src="https://strapi.ackerlabs.my.id/uploads/portrait_man_smiling_camera_while_colleagues_working_ba_e7bc4d50d4.jpg"
                                         alt="Join Talenvyra Career"

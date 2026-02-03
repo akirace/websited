@@ -8,7 +8,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   /* Talenvyra Brand Colors from Logo */
   --brand-blue: #1a4d8c;
   --brand-blue-light: #2a6bb5;
@@ -19,6 +19,11 @@
   --brand-magenta: #a83279;
 }
 
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -26,4 +31,77 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile touch improvements */
+@media (max-width: 768px) {
+
+  /* Improve tap targets */
+  a,
+  button {
+    min-height: 44px;
+  }
+
+  /* Better text sizing on mobile */
+  html {
+    font-size: 16px;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Smooth momentum scrolling on iOS */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Custom scrollbar for desktop */
+@media (min-width: 769px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--brand-blue) 0%, var(--brand-cyan) 100%);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-blue);
+  }
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--brand-blue);
+  color: white;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive container padding */
+.container-responsive {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
 }
