@@ -19,6 +19,15 @@ export default function Navbar() {
     { name: 'Contacts', href: '/contacts' },
   ];
 
+  // Helper function to check if a link is active
+  // Handles both with and without trailing slashes for static export compatibility
+  const isActiveLink = (href: string) => {
+    if (!pathname) return false;
+    const normalizedPathname = pathname.replace(/\/$/, '');
+    const normalizedHref = href.replace(/\/$/, '');
+    return normalizedPathname === normalizedHref;
+  };
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -48,8 +57,8 @@ export default function Navbar() {
   return (
     <>
       <nav className={`sticky top-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 transition-all duration-300 ${isScrolled
-          ? 'bg-white/98 backdrop-blur-md shadow-lg'
-          : 'bg-white/95 backdrop-blur-sm shadow-sm'
+        ? 'bg-white/98 backdrop-blur-md shadow-lg'
+        : 'bg-white/95 backdrop-blur-sm shadow-sm'
         }`}>
         <Link href="/home" className="flex items-center gap-3 md:gap-4 z-50">
           {/* Logo */}
@@ -71,7 +80,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive = isActiveLink(link.href);
             return (
               <Link
                 key={link.href}
@@ -125,14 +134,14 @@ export default function Navbar() {
           {/* Navigation Links */}
           <div className="flex flex-col gap-2">
             {navLinks.map((link, index) => {
-              const isActive = pathname === link.href;
+              const isActive = isActiveLink(link.href);
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   className={`px-4 py-4 rounded-xl text-base font-medium transition-all duration-300 ${isActive
-                      ? 'bg-gradient-to-r from-[#1a4d8c]/10 to-[#00a8b5]/10 text-[#1a4d8c] font-bold border-l-4 border-[#1a4d8c]'
-                      : 'text-gray-700 hover:bg-gray-50 hover:text-[#1a4d8c]'
+                    ? 'bg-gradient-to-r from-[#1a4d8c]/10 to-[#00a8b5]/10 text-[#1a4d8c] font-bold border-l-4 border-[#1a4d8c]'
+                    : 'text-gray-700 hover:bg-gray-50 hover:text-[#1a4d8c]'
                     }`}
                   style={{
                     transitionDelay: isMenuOpen ? `${index * 50}ms` : '0ms',
