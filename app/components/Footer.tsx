@@ -28,7 +28,7 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col gap-3 md:gap-4 col-span-2 sm:col-span-1">
                         <h3 className="text-xs md:text-sm font-semibold tracking-wider uppercase text-gray-500">Connect</h3>
-                        <a href="mailto:talenvyra.recuitment@gmail.com" className="text-sm text-gray-300 hover:text-white transition-colors break-all sm:break-normal">talenvyra.recuitment@gmail.com</a>
+                        <a href="mailto:recruit@talenvyra.com" className="text-sm text-gray-300 hover:text-white transition-colors break-all sm:break-normal">recruit@talenvyra.com</a>
                         <div className="text-xs text-gray-400 mt-1 md:mt-2 leading-relaxed">
                             <p className="font-semibold text-gray-300 uppercase mb-1">Office</p>
                             <p>Latinos Bussines District, Jl. Raya Rawa Buntu Blk. C8 No.18, Rw. Buntu, Kec. Serpong, Kota Tangerang Selatan, Banten</p>

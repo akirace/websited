@@ -41,7 +41,7 @@ export default function Contacts() {
                             <div className="space-y-3 sm:space-y-4 mb-6 md:mb-8">
                                 {/* Email Card */}
                                 <a
-                                    href="mailto:talenvyra.recuitment@gmail.com"
+                                    href="mailto:recruit@talenvyra.com"
                                     className="group flex items-center gap-3 sm:gap-4 p-4 sm:p-5 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#1a4d8c]/20 transition-all duration-300"
                                 >
                                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#1a4d8c] to-[#00a8b5] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
@@ -49,9 +49,26 @@ export default function Contacts() {
                                     </div>
                                     <div className="flex-1">
                                         <p className="text-sm text-gray-500 mb-1">Email Us</p>
-                                        <p className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-[#1a4d8c] transition-colors break-all sm:break-normal">talenvyra.recuitment@gmail.com</p>
+                                        <p className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-[#1a4d8c] transition-colors break-all sm:break-normal">recruit@talenvyra.com</p>
                                     </div>
                                     <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#1a4d8c] group-hover:translate-x-1 transition-all" />
+                                </a>
+
+                                {/* WhatsApp Card */}
+                                <a
+                                    href="https://wa.me/6287745360602"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group flex items-center gap-3 sm:gap-4 p-4 sm:p-5 bg-white rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#25D366]/20 transition-all duration-300"
+                                >
+                                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#25D366] to-[#128C7E] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                                        <Phone className="w-6 h-6 text-white" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <p className="text-sm text-gray-500 mb-1">WhatsApp</p>
+                                        <p className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-[#25D366] transition-colors">+62 877-4536-0602</p>
+                                    </div>
+                                    <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-[#25D366] group-hover:translate-x-1 transition-all" />
                                 </a>
 
                                 {/* Address Card */}

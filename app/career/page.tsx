@@ -96,10 +96,10 @@ export default function Career() {
                                     <p className="text-sm text-white/80">
                                         or email to{" "}
                                         <a
-                                            href="mailto:talenvyra.recuitment@gmail.com"
+                                            href="mailto:recruit@talenvyra.com"
                                             className="text-white underline hover:text-white/90 transition-colors"
                                         >
-                                            talenvyra.recuitment@gmail.com
+                                            recruit@talenvyra.com
                                         </a>
                                     </p>
                                 </div>

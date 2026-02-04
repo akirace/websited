@@ -160,10 +160,10 @@ export default function Navbar() {
             <div className="text-center">
               <p className="text-xs text-gray-500 mb-2">Get in touch</p>
               <a
-                href="mailto:talenvyra.recuitment@gmail.com"
+                href="mailto:recruit@talenvyra.com"
                 className="text-sm font-medium text-[#1a4d8c] hover:underline"
               >
-                talenvyra.recuitment@gmail.com
+                recruit@talenvyra.com
               </a>
             </div>
           </div>
