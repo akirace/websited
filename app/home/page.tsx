@@ -17,7 +17,7 @@ export default function Home() {
                         <span className="text-[#1a4d8c]">Talent Development</span>
                     </h1>
                     <p className="text-base md:text-lg text-gray-600 mb-8 md:mb-12 leading-relaxed max-w-3xl mx-auto px-2">
-                        Talenvyra positions itself as a strategic partner for talent development rather than a traditional outsourcing vendor. We build sustainable careers and intelligent connections.
+                        Talenvyra positions itself as a strategic parvgtner for talent development rather than a traditional outsourcing vendor. We build sustainable careers and intelligent connections.
                     </p>
                 </div>
 
